@@ -10,7 +10,6 @@ let m,b;
 function setup(){
 	var canv = createCanvas(400,400);
 	canv.mousePressed(addDot);
-	canv.mousePressed(console.log("yes");
 	m = tf.variable(tf.scalar(1));
 	b = tf.variable(tf.scalar(0));
 }
@@ -21,6 +20,7 @@ function addDot(){
 		y = map(mouseY,0,height,1,0);
 	x_vals.push(x);
 	y_vals.push(y);
+	console.log("yes");
 }
 
 function loss(pred, labels){
