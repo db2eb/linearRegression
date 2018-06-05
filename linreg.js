@@ -20,7 +20,6 @@ function addDot(){
 		y = map(mouseY,0,height,1,0);
 	x_vals.push(x);
 	y_vals.push(y);
-	console.log("yes");
 }
 
 function loss(pred, labels){
