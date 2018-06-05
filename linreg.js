@@ -8,13 +8,14 @@ const x_vals = [],
 let m,b;
 
 function setup(){
-	createCanvas(400,400);
+	var canv = createCanvas(400,400);
+	canv.mousePressed(addDot);
 	m = tf.variable(tf.scalar(1));
 	b = tf.variable(tf.scalar(0));
 }
 
 //Draw points
-function mousePressed(){
+function addDot(){
 	let x = map(mouseX,0,width,0,1), //Normalize
 		y = map(mouseY,0,height,1,0);
 	x_vals.push(x);
