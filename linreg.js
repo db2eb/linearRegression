@@ -1,15 +1,16 @@
 //Data input
 const x_vals = [],
-	  y_vals = [],
+	y_vals = [],
 //tf.js sgd 
-	  learningRate = 0.5,
-	  optimizer = tf.train.sgd(learningRate);
+	learningRate = 0.5,
+	optimizer = tf.train.sgd(learningRate);
 //Linear Regression: y = mx+b
 let m,b;
 
 function setup(){
 	var canv = createCanvas(400,400);
 	canv.mousePressed(addDot);
+	canv.mousePressed(console.log("yes");
 	m = tf.variable(tf.scalar(1));
 	b = tf.variable(tf.scalar(0));
 }
